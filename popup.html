@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>popup</title>
+</head>
+<body>
+    <script src="popup.js"></script>
+    <div id="container">
+        <div id="dropdown-container">
+            <select name="table" id="dropdown">
+                <option value="0">전체글보기</option>
+                <option value="1">이세돌 자유게시판</option>
+                <option value="2">이세돌 NEWS</option>
+                <option value="3">이세돌 노래 근황</option>
+                <option value="4">이세돌 팬영상</option>
+                <option value="5">이세돌 노래 COVER</option>
+                <option value="6">이세돌 핫클립</option>
+                <option value="7">이세돌 팬아트</option>
+                <option value="8">BEST 팬아트</option>
+                <option value="9">웹툰 BEST</option>
+                <option value="10">웹툰 (왁타버스)</option>
+                <option value="11">짤툰+웹툰 유망주</option>
+                <option value="12">고멤놀이터</option>
+                <option value="13">고멤게시판</option>
+                <option value="14">고멤팬영상</option>
+                <option value="15">고멤핫클립</option>
+                <option value="16">고멤팬아트</option>
+                <option value="17">나도 강사다</option>
+                <option value="18">왁굳이야기</option>
+                <option value="19">아 오늘 방송 못봤는데</option>
+                <option value="20">팬영상 & 왁컬로이두</option>
+                <option value="21">우왁굳 핫클립</option>
+                <option value="22">우왁굳 웹툰 게시판</option>
+                <option value="23">우왁굳 팬아트</option>
+                <option value="24">BEST 유머 정보 게시판</option>
+                <option value="25">유머 정보 게시판</option>
+                <option value="26">자유게시판</option>
+                <option value="27">질문 답변 게시판</option>
+                <option value="28">패션 게시판</option>
+                <option value="29">자동차 게시판</option>
+                <option value="30">음악 게시판</option>
+                <option value="31">리뷰 게시판</option>
+                <option value="32">주식 공부 게시판</option>
+                <option value="33">충신들의 아이디어</option>
+                <option value="34">충신들의 게임추천</option>
+            </select>
+        </div>
+        <div id="inptandbtn">
+            <input type="number" name="page-number" placeholder="페이지번호" min="1" max="1000" id="page-number">
+            <button id="submit">두재기</button>
+        </div>
+        <div id="toggle">
+            <label for="setting">설정 보이기</label>
+            <input type="checkbox" id="toggleSwitch" name="setting"/>
+        </div>
+        <div id="settings">
+            <div id="highlighter">
+                <h2>채팅 하이라이트 대상 설정</h2>
+                <label for="wakgood">우왁굳</label>
+                <input type="checkbox" name="wakgood" value="woowakgood"/>
+                <br>
+                <label for="isedol">이세계아이돌</label>
+                <input type="checkbox" name="isedol" value="lilpaaaaaa,vo_ine,viichan6,gosegugosegu,jingburger,cotton__123"/>
+                <br>
+                <div id="etc-container">
+                    <label for="etc">기타 대상 추가</label>
+                    <input type="text" name="etc" id="etc" placeholder="트위치ID 입력 후 엔터"/>
+                </div>
+                <br>
+                <h2>채팅 하이라이트 색상 설정</h2>
+                <div class="colors">
+                    <label for="color">색상 선택</label>
+                    <div class="input-color-container">
+                        <input id="input-color" class="input-color" name="color" type="color">
+                    </div>
+                    <button id="save">저장</button>
+                    <button id="reset">리셋</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

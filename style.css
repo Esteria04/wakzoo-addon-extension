@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+label {
+    font-size: 15px;
+}
+select {
+    font-family: 'GmarketSansMedium';
+	width: 261px;
+	height: 35px;
+	border: 0px;
+	background: #E7E7E7;
+	border-radius: 10px;
+}
+input[type='checkbox'] {
+    width:20px;
+    height:20px;
+}
+input {
+    font-family: 'GmarketSansMedium';
+	border: 0px;
+	background: #E7E7E7;
+    text-align: center;
+}
+.input-color-container {
+    position: relative;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    border: solid 2px #E7E7E7;
+    border-radius: 20px;
+  }
+  
+  .input-color {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 56px;
+    height: 56px;
+    border: none;
+  }
+#etc {
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#page-number {
+	border-radius: 10px;
+
+    margin-right: 30px;
+	width: 100px;
+	height: 35px;
+}
+::placeholder {
+    text-align: center; 
+ }
+ 
+ /* or, for legacy browsers */
+ 
+ ::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+ input[type="text"]:focus {
+	outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+    font-family: 'GmarketSansMedium';
+	width: 60px;
+	height: 30px;
+	border: 0px;
+	background: #E7E7E7;
+	border-radius: 10px;
+}
+
+button:active {
+    background: #bababa;
+}
+
+body {
+    font-family: 'GmarketSansMedium';
+    color: #f2f2f2;
+    background: #2f2f2f;
+
+    width: 300px;
+    height: 120px;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#dropdown-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#inptandbtn {
+    margin-left: 51px;
+}
+
+.colors {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+label {
+    margin:5px;
+}
+#toggle {
+    margin-top: 10px;
+}
+#save {
+    margin-left: 5px;
+}
+#reset {
+    margin-left: 5px;
+}
+#etc-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
