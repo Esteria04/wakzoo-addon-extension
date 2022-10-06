@@ -2,48 +2,50 @@ window.onload = function() {
     if (typeof browser === "undefined") {
         var browser = chrome;
     }
-    const articleList = ["search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"amp;search.menuid=327&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.cafeId=27842958&amp;search.page=",
-"search.menuid=347&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"amp;search.menuid=397&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.cafeId=27842958&amp;search.page=",
-"search.menuid=361&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=409&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=331&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=344&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
-"search.menuid=551&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
-"search.menuid=501&search.boardtype=I&search.totalCount=125&search.cafeId=27842958&search.page=",
-"search.menuid=380&search.boardtype=I&search.totalCount=401&search.cafeId=27842958&search.page=",
-"search.menuid=500&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
-"search.menuid=362&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=300&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=511&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=489&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=299&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
-"search.menuid=438&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=138&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=428&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=57&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=66&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=58&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
-"search.menuid=59&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
-"search.menuid=415&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=122&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=1&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=25&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=132&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
-"search.menuid=124&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=433&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=84&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
-"search.menuid=261&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=50&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
-"search.menuid=4&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page="];
-
+    const articleList = ["&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=327&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=347&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=397&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=361&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=409&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=331&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=344&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
+"&search.menuid=551&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
+"&search.menuid=501&search.boardtype=I&search.totalCount=144&search.cafeId=27842958&search.page=",
+"&search.menuid=380&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
+"&search.menuid=500&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
+"&search.menuid=506&search.boardtype=I&search.totalCount=401&search.cafeId=27842958&search.page=",
+"&search.menuid=504&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
+"&search.menuid=362&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=300&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=511&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=489&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=299&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
+"&search.menuid=438&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=138&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=428&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=57&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=66&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=58&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
+"&search.menuid=59&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
+"&search.menuid=415&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=122&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=1&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=25&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=132&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
+"&search.menuid=124&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=433&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=84&search.boardtype=I&search.totalCount=201&search.cafeId=27842958&search.page=",
+"&search.menuid=261&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=50&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=4&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page=",
+"&search.menuid=579&search.boardtype=L&search.totalCount=151&search.cafeId=27842958&search.page="];
     const button = document.getElementById("submit");
     function onButtonClick() {
         const article = Number(document.getElementById("dropdown").value);
         const choosedUrl = articleList[article];
         const choosedPage = String(document.getElementById("page-number").value);
-        const finalUrl = `https://cafe.naver.com/steamindiegame/ArticleList.nhn?search.clubid=27842958&${choosedUrl+choosedPage}`
+        const finalUrl = `https://cafe.naver.com/ArticleList.nhn?search.clubid=27842958${choosedUrl+choosedPage}`
         chrome.tabs.create({active: true, url: finalUrl});
     }
 
